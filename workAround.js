@@ -1,12 +1,12 @@
-import Empolyee from './employee';
+import {Employee, cadre, tax, benefits, bonus, reimbursement} from './employee';
 
 function getEmployeeInformation(inputSalary) {
-  salary = inputSalary;
-  console.log('Cadre: ' + getCadre());
-  console.log('Tax: ' + calculateTax());
-  console.log('Benefits: ' + getBenefits());
-  console.log('Bonus: ' + calculateBonus());
-  console.log('Reimbursement Eligibility: ' + reimbursementEligibility() + '\n');
+  Employee.salary = inputSalary;
+  console.log('Cadre: ' + cadre());
+  console.log('Tax: ' + tax());
+  console.log('Benefits: ' + benefits());
+  console.log('Bonus: ' + bonus());
+  console.log('Reimbursement Eligibility: ' + reimbursement() + '\n');
 }
 
 getEmployeeInformation(10000);
